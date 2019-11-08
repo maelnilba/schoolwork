@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+body {
+	background-image: url(background.jpg);
+	
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+section {
+	display: block;	
+	height: 120px;	
+}
+
+
+
+section i {
+	margin-left: 10px;
+}
+
+.profil {
+	max-width: 100%;
+	height: auto;
+	margin-left: 1.75vw;
+	
+}
+
+h2 {
+	font-family: "patua-one" Times, serif;
+	font-weight: bold;
+	font-size: 260%;
+	letter-spacing: -4px;
+    background: -webkit-linear-gradient(black, navy);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	
+}
+
+h6 {
+	text-align: center;
+	font-size: 8vw;
+	font-family: "Georgia", Times, serif;
+}
+
+p {
+    font-family: "Verdana", Times, serif;
+
+}
+.skill {
+	margin-bottom: 2em;
+	margin-top: 3em;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: "Arial Black", Serif;
+}
+
+.logo {
+	margin-left: 20%;
+  margin-right: auto;
+  height:auto;
+  width: 100px;
+
+}
+
+.inv {
+	visibility: hidden;
+}
+
+.bio {
+	text-align: left;
+	margin-left: 2.5em;	
+	margin-bottom: 4px;
+	
+	color:#1A005A; 
+	font-family: "Arial";
+	font-size: 1.2em;
+	
+}
+
+
+
+.titlecol {
+font-family: "patua-one" Times, serif;
+	font-weight: bold;
+	font-size: 200%;
+	letter-spacing: -4px;
+	margin-top: 4px;
+    background: -webkit-linear-gradient(blue, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+ol, li {
+	font-size: 1.5em;
+}
+
+.col-md-auto.border.border-light.rounded.shadow:hover{
+	background-color: rgba(255,255,255,0.40);
+	
+}
+
+
+
+#logo {
+	position: absolute;
+	top:5vw;
+	left: 7.5%;
+	width: 66vw;
+	animation: fill 0.6s ease forwards 4.2s;
+}
+
+#logo path:nth-child(1) {
+	stroke-dasharray:248;
+	stroke-dashoffset:248;
+	animation: line_anim 2s ease forwards;
+	
+}
+
+h5 {
+	text-align: center;
+	font-size: 3em;
+	opacity: 0;
+	animation: appear 0.7s ease forwards 4.9s; 
+}
+
+@keyframes appear {
+	to {
+	opacity: 1;
+	}
+}
+#logo path:nth-child(2) {
+	stroke-dasharray:242;
+	stroke-dashoffset:242;
+	animation: line_anim 2s ease forwards 0.3s;
+}
+
+.contactinfo{
+	color: lightcyan;
+	font-family: "Verdana";
+	font-size: 0.75em;
+	font-style: normal;
+	
+}
+
+li > i.contactinfo{
+	margin-left: 20vw;
+	
+}
+#logo path:nth-child(3) {
+	stroke-dasharray:436;
+	stroke-dashoffset:436;
+	animation: line_anim 2s ease forwards 0.6s;
+}
+
+#logo path:nth-child(4) {
+	stroke-dasharray:424;
+	stroke-dashoffset:424;
+	animation: line_anim 2s ease forwards 0.9s;
+}
+
+#logo path:nth-child(5) {
+	stroke-dasharray:385;
+	stroke-dashoffset:385;
+	animation: line_anim 2s ease forwards 1.2s;
+}
+
+#logo path:nth-child(6) {
+	stroke-dasharray:670;
+	stroke-dashoffset:670;
+	animation: line_anim 2s ease forwards 1.5s;
+}
+
+#logo path:nth-child(7) {
+	stroke-dasharray:508;
+	stroke-dashoffset:508;
+	animation: line_anim 2s ease forwards 1.8s;
+}
+
+#logo path:nth-child(8) {
+	stroke-dasharray:516;
+	stroke-dashoffset:516;
+	animation: line_anim 2s ease forwards 2.1s;
+}
+
+#logo path:nth-child(9) {
+	stroke-dasharray:240;
+	stroke-dashoffset:240;
+	animation: line_anim 2s ease forwards 2.4s;
+}
+
+@keyframes line_anim{
+	to{
+		stroke-dashoffset: 0;
+		
+	}
+}
+
+
+
+@keyframes fill{
+	to {
+		fill: black;
+	}
+}
+
+
+
+.progress{
+	margin-top: 10px;
+}
+
+.ending{
+	margin-top: 20px;
+}
