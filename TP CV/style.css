@@ -1,15 +1,36 @@
 @charset "utf-8";
 
 body {
-	background-image: url(background.jpg);
-	
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	background: linear-gradient(-45deg, #FFFFFF, #eee7ea, #F4F5F6, #E5F9FF);
+	background-size: 400% 400%;
+	animation: gradientBG 15s ease infinite;
+	font-family: 'Poppins', sans-serif;
 }
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
 *{
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	color: black;
 }
+
 
 section {
 	display: block;	
@@ -30,39 +51,36 @@ section i {
 }
 
 h2 {
-	font-family: "patua-one" Times, serif;
 	font-weight: bold;
-	font-size: 260%;
-	letter-spacing: -4px;
-    background: -webkit-linear-gradient(black, navy);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-	
+	text-shadow: 1px 1px 1px black;
+	color : white;
+	font-size: 300%;
+	text-decoration: underline white;
+	letter-spacing: 5px;
+    
 }
 
 h6 {
 	text-align: center;
 	font-size: 8vw;
-	font-family: "Georgia", Times, serif;
+
+	color: black;
 }
 
-p {
-    font-family: "Verdana", Times, serif;
 
-}
 .skill {
 	margin-bottom: 2em;
 	margin-top: 3em;
 	font-size: 18px;
 	font-weight: bold;
-	font-family: "Arial Black", Serif;
 }
 
 .logo {
-	margin-left: 20%;
-  margin-right: auto;
-  height:auto;
-  width: 100px;
+	margin-left: 30%;
+ 	 margin-right: auto;
+  	height:auto;
+  	width: 100px;
+	filter: drop-shadow(5px 5px 3px silver);
 
 }
 
@@ -76,7 +94,7 @@ p {
 	margin-bottom: 4px;
 	
 	color:#1A005A; 
-	font-family: "Arial";
+
 	font-size: 1.2em;
 	
 }
@@ -84,14 +102,10 @@ p {
 
 
 .titlecol {
-font-family: "patua-one" Times, serif;
 	font-weight: bold;
 	font-size: 200%;
-	letter-spacing: -4px;
 	margin-top: 4px;
-    background: -webkit-linear-gradient(blue, black);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  
 }
 
 
@@ -99,18 +113,15 @@ ol, li {
 	font-size: 1.5em;
 }
 
-.col-md-auto.border.border-light.rounded.shadow:hover{
-	background-color: rgba(255,255,255,0.40);
-	
-}
 
 
 
 #logo {
 	position: absolute;
-	top:5vw;
-	left: 7.5%;
+	padding-top: 10%;
+	padding-left: 5%;
 	width: 66vw;
+	height: auto;
 	animation: fill 0.6s ease forwards 4.2s;
 }
 
@@ -123,8 +134,11 @@ ol, li {
 
 h5 {
 	text-align: center;
+	margin-top: 25%;
 	font-size: 3em;
+	font-weight: bold;
 	opacity: 0;
+	color: black;
 	animation: appear 0.7s ease forwards 4.9s; 
 }
 
@@ -141,16 +155,11 @@ h5 {
 
 .contactinfo{
 	color: lightcyan;
-	font-family: "Verdana";
 	font-size: 0.75em;
 	font-style: normal;
 	
 }
 
-li > i.contactinfo{
-	margin-left: 20vw;
-	
-}
 #logo path:nth-child(3) {
 	stroke-dasharray:436;
 	stroke-dashoffset:436;
@@ -212,6 +221,14 @@ li > i.contactinfo{
 
 .progress{
 	margin-top: 10px;
+	height: 25px;
+	background-color: white;
+}
+
+.progress-bar {
+	color: lightcyan;
+	font-size: 20px;
+	font-weight: bold;
 }
 
 .ending{
